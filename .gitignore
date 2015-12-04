@@ -1,0 +1,8 @@
+config-plugin.h
+config-plugin.mak
+*.a
+*.d
+*.o
+*.so
+kpcr_sample.cpp
+level3.vim
