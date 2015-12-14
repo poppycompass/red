@@ -232,7 +232,7 @@ static void red_insn_end_callback(DECAF_Callback_Params* params)
 
 static void red_loadmainmodule_callback(VMI_Callback_Params* params)
 {
-    // targetname = "red.exe"
+    // targetname = "blue.exe"
     {
         DECAF_printf("Process %s you spcecified starts \n", params->cp.name);
         target_cr3 = params->cp.cr3;
@@ -249,7 +249,7 @@ static void red_loadmainmodule_callback(VMI_Callback_Params* params)
 
 void do_monitor_proc(Monitor* mon, const QDict* qdict)
 {
-    // targetname = "red.exe"
+    // targetname = "blue.exe"
     if ((qdict != NULL) && (qdict_haskey(qdict, "procname")))
         strncpy(targetname, qdict_get_str(qdict, "procname"), 512);
     targetname[511] = '\0';
