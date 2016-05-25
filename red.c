@@ -146,7 +146,7 @@ static void GetTickCount_ret(void *param)
     hookapi_remove_hook(ctx->hook_handle);
     if (!flag) {                                // ture is only first call
         cpu_single_env->regs[R_EAX] = 0;    // return 0
-        flag = 1
+        flag = 1;
     } else {
         flag = 0;
     }
